@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_app"
+    tools:context=".HotelSearchActivity">
+
+    <com.mancj.materialsearchbar.MaterialSearchBar
+        android:id="@+id/hotel_searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:mt_speechMode="false"
+        app:mt_hint="Enter your Hotel...."/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_hotel_search"
+        android:scrollbars="vertical"
+        android:visibility="visible"
+        android:layout_below="@id/hotel_searchBar"/>
+
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fabHotelSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_filter_list_white_24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="12dp"
+        app:fab_colorNormal="@color/powerfulColor"
+        app:fab_colorPressed="#092357"
+        app:fab_colorRipple="#99FFFFFF"
+        app:fab_shadowColor="#b3eee82c"
+        app:fab_shadowRadius="4dp"
+        app:fab_shadowXOffset="2dp"
+        app:fab_shadowYOffset="4dp"
+        app:fab_showShadow="true"
+        app:fab_size="normal"/>
+
+</RelativeLayout>

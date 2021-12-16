@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/design_card3"
+    android:orientation="horizontal"
+    android:elevation="10dp"
+    android:layout_margin="12dp"
+    android:padding="0dp">
+
+    <TextView
+        android:id="@+id/facilityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facility"
+        android:textSize="18sp"
+        android:textColor="@color/powerfulColor"
+        android:layout_margin="12dp"/>
+
+    <TextView
+        android:id="@+id/facilityNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textSize="18sp"
+        android:textColor="@color/powerfulColor"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="1dp"
+        android:paddingEnd="12dp"/>
+
+</LinearLayout>

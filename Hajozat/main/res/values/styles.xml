@@ -1,0 +1,28 @@
+<resources>
+
+    <attr name="textColorError" type="color|reference" />
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="NewRatingBarStyle" parent="@style/Widget.AppCompat.RatingBar">
+        <item name="colorControlNormal">#FF505050</item>
+        <item name="colorControlActivated">#F6E7D424</item>
+    </style>
+
+    <style name="RatingBarTheme"
+        parent="Widget.AppCompat.RatingBar">
+        <item name="colorAccent">@color/powerfulColor</item>
+    </style>
+
+</resources>

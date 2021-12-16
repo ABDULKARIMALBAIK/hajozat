@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HotelFilterActivity"
+    android:background="@drawable/background_app">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="4dp">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hotel Filter"
+            android:textSize="40sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="35dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Star : "
+                    android:textSize="28sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="4dp"
+                    />
+
+                <RatingBar
+                    android:id="@+id/hotel_rating"
+                    style="@style/NewRatingBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginRight="0dp"
+                    android:max="5"
+                    android:rating="0"
+                    android:scaleX="0.6"
+                    android:scaleY="0.6" />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hotel Type : "
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/spinner_hotel_type"
+                        app:ms_background_color="#FFFFFF"
+                        app:ms_text_color="@color/powerfulColor"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City : "
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/spinner_city"
+                        app:ms_background_color="#FFFFFF"
+                        app:ms_text_color="@color/powerfulColor"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facilities : "
+            android:textSize="28sp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="4dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_facility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="8dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Host Type : "
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="4dp"
+                        />
+
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/spinner_host"
+                        app:ms_background_color="#FFFFFF"
+                        app:ms_text_color="@color/powerfulColor"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnHotelFilterOK"
+            android:text="OK"
+            android:textColor="@color/powerfulColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_marginTop="20dp"
+            app:fButtonColor="@android:color/white"
+            app:shadowColor="@color/powerfulColor"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp"
+            app:cornerRadius="5dp"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Hajozat</string>
+    <string name="slogan">Deploy your hotels and rooms
+ manage them
+make sure your rooms and hotels
+are the best
+          New experince</string>
+    <string name="about">this app help you to manage your hotels and rooms and useful to check bookings and details of your rooms and deploy what you want to build and raise your company
+so Be Happy</string>
+
+    <string name="title_activity_hotel">HotelActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Brand Name</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Report</string>
+    <string name="number_of_files">85</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">...................</string>
+    <string name="facebook_login_protocol_scheme">..................</string>
+    <string name="title_activity_hotel_map">Map</string>
+</resources>

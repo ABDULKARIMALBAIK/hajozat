@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_app"
+    android:orientation="vertical"
+    tools:context=".HotelEditActivity">
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/imgHotel"
+        android:layout_width="match_parent"
+        android:contentDescription="Image Hotel"
+        android:scaleType="fitXY"
+        android:layout_height="250dp"
+        android:focusable="true"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-36dp">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnAddImage"
+            android:text="+"
+            android:textSize="20sp"
+            android:textColor="@color/powerfulColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:fButtonColor="@android:color/white"
+            app:shadowColor="@color/powerfulColor"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp"
+            app:cornerRadius="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/design_detail_edit"
+                android:orientation="vertical"
+                android:elevation="15dp"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stars :"
+                        android:textColor="@android:color/white"
+                        android:textSize="22sp"
+                        android:layout_marginTop="8dp"/>
+
+                    <RatingBar
+                        android:id="@+id/hotelRating"
+                        style="@style/NewRatingBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:max="5"
+                        android:rating="0"
+                        android:scaleX="0.6"
+                        android:scaleY="0.6" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="0dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Hotel Type : "
+                                android:textSize="20sp"
+                                android:textColor="@android:color/white"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="4dp"
+                                />
+
+                            <com.jaredrummler.materialspinner.MaterialSpinner
+                                android:id="@+id/spinner_hotel_type"
+                                app:ms_background_color="#FFFFFF"
+                                app:ms_text_color="@color/powerfulColor"
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="City : "
+                                android:textSize="20sp"
+                                android:textColor="@android:color/white"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="4dp"
+                                />
+
+                            <com.jaredrummler.materialspinner.MaterialSpinner
+                                android:id="@+id/spinner_city"
+                                app:ms_background_color="#FFFFFF"
+                                app:ms_text_color="@color/powerfulColor"
+                                android:layout_width="170dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Host Type : "
+                            android:textSize="20sp"
+                            android:textColor="@android:color/white"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="4dp"
+                            />
+
+                        <com.jaredrummler.materialspinner.MaterialSpinner
+                            android:id="@+id/spinner_host_type"
+                            app:ms_background_color="#FFFFFF"
+                            app:ms_text_color="@color/powerfulColor"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Check in  : "
+                                android:textSize="20sp"
+                                android:textColor="@android:color/white"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="4dp"
+                                />
+
+                            <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                                android:layout_width="170dp"
+                                android:layout_height="48dp"
+                                android:id="@+id/check_in"
+                                android:layout_margin="8dp"
+                                app:textSize="12sp"
+                                app:backGroundColor="@color/colorAccent"
+                                app:initialNumber="1"
+                                app:textColor="@color/powerfulColor"
+                                app:finalNumber="10"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Check out : "
+                                android:textSize="20sp"
+                                android:textColor="@android:color/white"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="4dp"
+                                />
+
+                            <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                                android:layout_width="170dp"
+                                android:layout_height="48dp"
+                                android:id="@+id/check_out"
+                                android:layout_margin="8dp"
+                                app:textSize="12sp"
+                                app:backGroundColor="@color/colorAccent"
+                                app:initialNumber="1"
+                                app:textColor="@color/powerfulColor"
+                                app:finalNumber="10"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/edtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@android:color/white"
+                    android:hint="Hotel Name"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    android:inputType="text"
+                    app:met_baseColor="@android:color/white"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@android:color/white"
+                    app:met_singleLineEllipsis="true"
+                    android:layout_margin="8dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_margin="8dp">
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/edtLat"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@android:color/white"
+                            android:hint="Lat"
+                            android:textColor="@android:color/white"
+                            android:textSize="22sp"
+                            android:inputType="text"
+                            app:met_baseColor="@android:color/white"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@android:color/white"
+                            app:met_singleLineEllipsis="true"
+                            android:layout_margin="4dp"
+                            />
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:id="@+id/edtLng"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@android:color/white"
+                            android:hint="Lng"
+                            android:textColor="@android:color/white"
+                            android:textSize="22sp"
+                            android:inputType="text"
+                            app:met_baseColor="@android:color/white"
+                            app:met_floatingLabel="highlight"
+                            app:met_primaryColor="@android:color/white"
+                            app:met_singleLineEllipsis="true"
+                            android:layout_margin="4dp"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/design_detail_edit"
+                android:orientation="vertical"
+                android:elevation="15dp"
+                tools:targetApi="lollipop">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Facility :"
+                        android:textColor="@android:color/white"
+                        android:textSize="22sp"
+                        android:layout_margin="12dp"/>
+
+                    <info.hoang8f.widget.FButton
+                        android:id="@+id/btnAddFacility"
+                        android:text="+"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:fButtonColor="@color/colorPrimaryDark"
+                        app:shadowColor="@android:color/white"
+                        app:shadowEnabled="true"
+                        app:shadowHeight="5dp"
+                        app:cornerRadius="5dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_facility"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingBottom="8dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/design_detail_edit"
+                android:orientation="vertical"
+                android:elevation="15dp"
+                tools:targetApi="lollipop">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rules :"
+                        android:textColor="@android:color/white"
+                        android:textSize="22sp"
+                        android:layout_margin="12dp"/>
+
+                    <info.hoang8f.widget.FButton
+                        android:id="@+id/btnAddRule"
+                        android:text="+"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:fButtonColor="@color/colorPrimaryDark"
+                        app:shadowColor="@android:color/white"
+                        app:shadowEnabled="true"
+                        app:shadowHeight="5dp"
+                        app:cornerRadius="5dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_rules"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingBottom="8dp"/>
+
+            </LinearLayout>
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnEditHotel"
+                android:text="Edit"
+                android:textColor="@color/powerfulColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_alignParentBottom="true"
+                app:fButtonColor="@android:color/white"
+                app:shadowColor="@color/powerfulColor"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp"
+                app:cornerRadius="5dp"
+                />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

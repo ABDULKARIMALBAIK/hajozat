@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item
+        android:id="@+id/hotel_action"
+        android:title="Hotels"
+        android:icon="@drawable/ic_home_power_24dp"/>
+
+    <item
+        android:id="@+id/room_booking_action"
+        android:title="Booked Rooms"
+        android:icon="@drawable/ic_airline_seat_flat_black_24dp"/>
+
+
+    <item
+        android:id="@+id/analyze_action"
+        android:title="Analyze"
+        android:icon="@mipmap/chart_action"/>
+
+    <item
+        android:id="@+id/profile_action"
+        android:title="Profile"
+        android:icon="@drawable/ic_account_circle_pwer_24dp"/>
+
+    <item
+        android:id="@+id/fingerprint_action"
+        android:title="Add Fingerprint"
+        android:icon="@drawable/ic_fingerprint_powerful_24dp"/>
+
+
+    <item
+        android:id="@+id/facebook_action"
+        android:title="Facebook Login"
+        android:icon="@drawable/ic_facebook_power_clipbord_24dp"/>
+
+
+    <item
+        android:id="@+id/about_action"
+        android:title="About"
+        android:icon="@drawable/ic_info_powerful_24dp"/>
+
+</menu>
